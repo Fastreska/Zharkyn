@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitapхана — Онлайн кітапхана</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">📚 Kitap<span>хана</span></a>
+
+    <nav class="nav">
+      <a href="#home">Басты бет</a>
+      <a href="#books">Кітаптар</a>
+      <a href="#about">Біз туралы</a>
+    </nav>
+
+    <button class="favorite-nav" id="favoritesBtn">
+      ♥ Таңдаулылар <span id="favoriteCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">📖 Білімге бастар жол</span>
+        <h1>Жаңа әлемді<br>кітаппен <span>аш!</span></h1>
+        <p>
+          Мыңдаған қызықты кітаптың ішінен өзіңе ұнағанын тап.
+          Оқы, үйрен және шабыттан!
+        </p>
+        <a href="#books" class="hero-btn">Кітаптарды қарау →</a>
+      </div>
+
+      <div class="hero-art">
+        <div class="big-book">📚</div>
+        <div class="floating-book book-one">📕</div>
+        <div class="floating-book book-two">📗</div>
+        <div class="floating-book book-three">📙</div>
+        <div class="hero-note">Бүгін оқы. Ертең дамы. ✨</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>1 200+</strong><span>Кітап қоры</span></div>
+      <div><strong>350+</strong><span>Автор</span></div>
+      <div><strong>5 000+</strong><span>Оқырман</span></div>
+    </section>
+
+    <section class="library" id="books">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">БІЗДІҢ ҚОР</span>
+          <h2>Кітаптар әлемі</h2>
+        </div>
+        <p>Өзіңе ұнайтын кітапты таңда</p>
+      </div>
+
+      <div class="search-box">
+        <span>🔍</span>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Кітап немесе автор іздеу..."
+          aria-label="Кітап немесе автор іздеу"
+        >
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="Барлығы">Барлығы</button>
+        <button class="filter" data-category="Роман">Роман</button>
+        <button class="filter" data-category="Психология">Психология</button>
+        <button class="filter" data-category="Бизнес">Бизнес</button>
+        <button class="filter" data-category="Фантастика">Фантастика</button>
+      </div>
+
+      <div class="results-info" id="resultsInfo"></div>
+      <div class="book-grid" id="bookGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div>📭</div>
+        <h3>Кітап табылмады</h3>
+        <p>Іздеу сөзін өзгертіп көріңіз.</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-icon">💡</div>
+      <div>
+        <span class="eyebrow">БІЗДІҢ МАҚСАТ</span>
+        <h2>Әр кітап — жаңа мүмкіндік</h2>
+        <p>
+          Kitapхана — оқырмандарға кітап таңдауға және оқу мәдениетін
+          дамытуға көмектесетін онлайн кітапхана жобасы.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">📚 Kitap<span>хана</span></a>
+    <p>© 2026 Kitapхана. Кітаппен бірге өс!</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
